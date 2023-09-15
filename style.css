@@ -1,136 +1,134 @@
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-html{
-    font-size: 62.5%;
-    scroll-behavior: smooth;
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
-:root{
-    --color-blanco: white;
-    --color-SemiGris: rgb(235, 228, 228);
+:root {
+  --color-blanco: white;
+  --color-SemiGris: rgb(235, 228, 228);
 
-    /*variables de tamaño de texto*/
-    --fontsize-m:2.2rem;
+  /*variables de tamaño de texto*/
+  --fontsize-m: 2.2rem;
 }
 
 /*style header*/
-.header{
-    width: 100%;
-    height: 70px;
-    display: flex;
-    align-items: center;
-    justify-content:space-between;
-    position: absolute;
-    z-index: 1;
+.header {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  z-index: 1;
 }
-.logo-header{
-    width: 70px;
-    height: 100%;
-    margin-left: 30px;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: end;
+.logo-header {
+  width: 70px;
+  height: 100%;
+  margin-left: 30px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: end;
 }
-.logo-header img{
-    width: 80%;
-    height: 80%;
-    object-fit: cover;
+.logo-header img {
+  width: 80%;
+  height: 80%;
+  object-fit: cover;
 }
 .icon-header {
-    width: 40px;
-    height: 40px;
-    margin-right: 20px;
-  }
-  .icon-menu {
-    width: 100%;
-    height: 100%;
-    color: rgb(213, 213, 213);
-    font-size: 3.5rem;
-  }
+  width: 40px;
+  height: 40px;
+  margin-right: 20px;
+}
+.icon-menu {
+  width: 100%;
+  height: 100%;
+  color: rgb(213, 213, 213);
+  font-size: 3.5rem;
+}
 /*style menu*/
 
-.nav-header{
-    display: flex;
-    margin-right: 30px;
+.nav-header {
+  display: flex;
+  margin-right: 30px;
 }
-.nav-header li{
-   list-style: none;
-   margin-left: 15px;
+.nav-header li {
+  list-style: none;
+  margin-left: 15px;
 }
-.nav-header li a{
-   color:var(--color-SemiGris);
-   text-decoration: none;
-   font-size: var(--fontsize-m);
-
+.nav-header li a {
+  color: var(--color-SemiGris);
+  text-decoration: none;
+  font-size: var(--fontsize-m);
 }
-
-
 
 /*style perfil*/
 
-.section-perfil{
-    width: 100%;
-    height: 100vh;
-    position: relative;
-    background-image: url(./img/fondoPage.jpg) ;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
-   
+.section-perfil {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background-image: url(./img/fondoPage.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
 }
-.container-perfil{
-    width: 100%;
-    height: 100%;
-    background-color: rgb(0, 0, 0, 0.65);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.container-perfil {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0, 0, 0, 0.65);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-.container-foto-perfil{
-    width: 228px;
-    height: 250px;
-
+.container-foto-perfil {
+  width: 228px;
+  height: 250px;
 }
-.figure-perfil img{
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
-    border-radius: 100%;
+.figure-perfil img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 100%;
 }
 
-.container-perfil-nombre{
-    color: var(--color-blanco);
-    font-size: var(--fontsize-m);
-    display: flex;
-    flex-direction: column;
+.container-perfil-nombre {
+  color: var(--color-blanco);
+  font-size: var(--fontsize-m);
+  display: flex;
+  flex-direction: column;
 }
-.nombre-apellido{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-image: linear-gradient(to top, #ff5733 0%, #8b33ff 50%, #3498db 50%, #3498db 100%);
-    background-clip: text;
-    /* -webkit-background-clip: text; Para navegadores Webkit como Chrome y Safari */
-    color: transparent; /* Hace que el texto sea transparente */
+.nombre-apellido {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: linear-gradient(
+    to top,
+    #ff5733 0%,
+    #8b33ff 50%,
+    #3498db 50%,
+    #3498db 100%
+  );
+  background-clip: text;
+  /* -webkit-background-clip: text; Para navegadores Webkit como Chrome y Safari */
+  color: transparent; /* Hace que el texto sea transparente */
 }
 
-
-
-@media(max-width:639px){
-    .nav-header{
-        display: none;
-    }
-} 
-@media(min-width:640px){
-    .icon-header{
-        display: none;
-    }
-
-} 
+@media (max-width: 639px) {
+  .nav-header {
+    display: none;
+  }
+}
+@media (min-width: 640px) {
+  .icon-header {
+    display: none;
+  }
+}
